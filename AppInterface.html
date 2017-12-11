@@ -1137,7 +1137,7 @@
 <header>
     <h1>
     
-        Route
+        AppInterface
     
     
     </h1>
@@ -1154,13 +1154,6 @@
 
         
 
-        
-            <h4 class="subsection-title"><b>Extends</b></h4>
-            <ul class="list-unstyled">
-                
-                    <li><a href="RouteInterface.html">RouteInterface</a></li>
-                
-            </ul>
         
 
         
@@ -1195,10 +1188,10 @@
             
 
 <div class="doc-member panel panel-default">
-    <div class="panel-heading" id="fileSystemLocation">
+    <div class="panel-heading" id="appManager">
         <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>fileSystemLocation</strong>
+            <div class="panel-title   ">
+                <strong>appManager</strong>
             </div>
             
         </div>
@@ -1220,12 +1213,10 @@
         
 
 
-    <p>tries to guess where the route definition is located</p>
-
         
 <div class="detail-content">
     <h5><b>Type</b>:</h5>
-    <code class="text-nowrap">String</code>
+    <code class="text-nowrap"><a href="AppManager.html">AppManager</a></code>
 
 </div>
 
@@ -1250,10 +1241,10 @@
             
 
 <div class="doc-member panel panel-default">
-    <div class="panel-heading" id="uid">
+    <div class="panel-heading" id="config">
         <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>uid</strong>
+            <div class="panel-title   ">
+                <strong>config</strong>
             </div>
             
         </div>
@@ -1275,7 +1266,168 @@
         
 
 
-    <p>unique identifier create on Route initialization</p>
+    <p>see affiliated <code>bi-config</code> npm package</p>
+
+        
+<div class="detail-content">
+    <h5><b>Type</b>:</h5>
+    <code class="text-nowrap">Config</code>
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="resourceManager">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>resourceManager</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+        
+<div class="detail-content">
+    <h5><b>Type</b>:</h5>
+    <code class="text-nowrap"><a href="ResourceManager.html">ResourceManager</a></code>
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="service">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>service</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+        
+<div class="detail-content">
+    <h5><b>Type</b>:</h5>
+    <code class="text-nowrap"><a href="Service.html">Service</a></code>
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="status">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>status</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>one of <a href="global.html#AppStatus"><code>AppStatus</code></a> enum</p>
 
         
 <div class="detail-content">
@@ -1316,10 +1468,279 @@
         <dl>
 
 <div class="doc-member panel panel-default">
-    <div class="panel-heading" id="Route">
+    <div class="panel-heading" id="AppInterface">
         <div class="row">
             <div class="panel-title   ">
-                new <strong>Route</strong><span class="signature">(options)</span>
+                new <strong>AppInterface</strong><span class="signature">(appManager, config, options)</span>
+            </div>
+            
+                <div class="panel-attributes">
+                    <span class="abstract badge">abstract</span>
+                </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+            <h5><b>Parameters</b>:</h5>
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>appManager</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap"><a href="AppManager.html">AppManager</a></code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>config</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Config</code>
+</li>
+        
+
+        
+
+        
+            <li><p>module</p></li>
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>options</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Object</code>
+</li>
+        
+
+        
+
+        
+
+        
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>name</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+
+        
+            <li><p>app's name</p></li>
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>validator</b>
+        
+
+        
+            <span class="optional badge">optional</span>
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Object</code>
+</li>
+        
+
+        
+
+        
+            <li><p>Ajv validator initialization options</p></li>
+        
+
+        
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>schemas</b>
+        
+
+        
+            <span class="optional badge">optional</span>
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Object</code> or <code class="text-nowrap">Array</code>
+</li>
+        
+
+        
+
+        
+            <li><p>list of globally accessible schema definitions</p></li>
+        
+
+        
+    </ul>
+</ul>
+
+        
+    </ul>
+</ul>
+
+        
+    </ul>
+</ul>
+
+        
+
+        
+
+        
+            <h5><b>Fires</b>:</h5>
+            <ul>
+                <li><a href="AppInterface.html#event:status-changed">AppInterface#status-changed</a></li>
+            
+                <li><a href="AppInterface.html#event:pre-init">AppInterface#pre-init</a></li>
+            
+                <li><a href="AppInterface.html#event:post-init">AppInterface#post-init</a></li>
+            
+                <li><a href="AppInterface.html#event:pre-build">AppInterface#pre-build</a></li>
+            
+                <li><a href="AppInterface.html#event:post-build">AppInterface#post-build</a></li>
+            
+                <li><a href="AppInterface.html#event:build-router">AppInterface#build-router</a></li>
+            
+                <li><a href="AppInterface.html#event:listening">AppInterface#listening</a></li>
+            
+                <li><a href="AppInterface.html#event:error">AppInterface#error</a></li>
+            
+                <li><a href="AppInterface.html#event:unknown-error">AppInterface#unknown-error</a></li>
+            
+                <li><a href="AppInterface.html#event:error-response">AppInterface#error-response</a></li>
+            </ul>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+    
+</div>
+</dl>
+    
+
+    <!-- METHODS -->
+    
+        <div class="page-header">
+            <h3>Methods</h3>
+        </div>
+
+        <dl>
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="buildRouter">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>buildRouter</strong><span class="signature">(options)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="Router.html">Router</a></code></span>
             </div>
             
         </div>
@@ -1385,7 +1806,7 @@
 <ul class="params">
     <li>
         
-            <b>name</b>
+            <b>public</b>
         
 
         
@@ -1412,9 +1833,11 @@
 <ul class="params">
     <li>
         
-            <b>type</b>
+            <b>version</b>
         
 
+        
+            <span class="optional badge">optional</span>
         
         
         
@@ -1428,8 +1851,6 @@
 
         
 
-        
-            <li><p>see <a href="global.html#RequestType"><code>RequestType</code></a> enum for available option values</p></li>
         
 
         
@@ -1461,10 +1882,177 @@
     </ul>
 </ul>
 
+        
+    </ul>
+</ul>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap"><a href="Router.html">Router</a></code>
+
+            
+
+            
+
+            
+        </span>
+    
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="close">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>close</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>Promise</code></span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>shutdown underlying net socket. if not running, resolved Promise will be returned</p>
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap">Promise</code>
+
+            
+
+            
+
+            
+        </span>
+    
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="getRoute">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>getRoute</strong><span class="signature">(uid)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="Route.html">Route</a></code></span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+            <h5><b>Parameters</b>:</h5>
+            
+
+
 <ul class="params">
     <li>
         
-            <b>summary</b>
+            <b>uid</b>
         
 
         
@@ -1481,66 +2069,6 @@
         
 
         
-            <li><p>swagger doc</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>desc</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">String</code>
-</li>
-        
-
-        
-
-        
-            <li><p>swagger doc</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>sdkMethodName</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">String</code>
-</li>
-        
-
-        
-
-        
-            <li><p>client sdk method name</p></li>
-        
-
-        
-    </ul>
-</ul>
 
         
     </ul>
@@ -1564,205 +2092,11 @@
     <ul>
     
         
-            <li>
-                <code class="text-nowrap"><a href="RouteError.html">RouteError</a></code>
-
-                
-            </li>
+            <li><p>Error - when route is not found</p></li>
         
     
     </ul>
 </div>
-
-        
-
-        
-
-        
-    </div>
-    
-</div>
-</dl>
-    
-
-    <!-- METHODS -->
-    
-        <div class="page-header">
-            <h3>Methods</h3>
-        </div>
-
-        <dl>
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="acceptsContentType">
-        <div class="row">
-            <div class="panel-title override  ">
-                <strong>acceptsContentType</strong><span class="signature">(type, <span class="optional">options</span>, <span class="optional">parser</span>)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="Route.html">Route</a></code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>define which content-type headers the route supports</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>type</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">String</code>
-</li>
-        
-
-        
-
-        
-            <li><p>Content-Type header value</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>options</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">Object</code>
-</li>
-        
-
-        
-
-        
-
-        
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>limit</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">String</code>
-</li>
-        
-
-        
-
-        
-            <li><p>data size limit</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>parser</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">function</code>
-</li>
-        
-
-        
-
-        
-            <li><p>custom data parser function - must return a Promise</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
 
         
 
@@ -1796,10 +2130,10 @@
             
 
 <div class="doc-member panel panel-default">
-    <div class="panel-heading" id="getAbsoluteUrl">
+    <div class="panel-heading" id="getValidator">
         <div class="row">
             <div class="panel-title   ">
-                <strong>getAbsoluteUrl</strong><span class="signature">(<span class="optional">pathParams</span>, <span class="optional">queryParams</span>)</span><i class="return-type-icon"></i><span class="type-signature"><code>String</code></span>
+                <strong>getValidator</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>Ajv</code></span>
             </div>
             
         </div>
@@ -1820,148 +2154,6 @@
     <div class="panel-body">
         
 
-
-    <p>returns absolute route endpoint</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>pathParams</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">Object</code>
-</li>
-        
-
-        
-
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>queryParams</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">Object</code>
-</li>
-        
-
-        
-
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap">String</code>
-
-            
-
-            
-
-            
-        </span>
-    
-
-        
-
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="getName">
-        <div class="row">
-            <div class="panel-title override  ">
-                <strong>getName</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>String</code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>returns route's name. If no name has been assigned,
-the name is dynamically created from route's url path</p>
 
         
 
@@ -1995,10 +2187,12 @@ the name is dynamically created from route's url path</p>
 
         <span class="returns">
             
-                <code class="text-nowrap">String</code>
+                <code class="text-nowrap">Ajv</code>
 
             
 
+            
+                validator instance
             
 
             
@@ -2016,11 +2210,15 @@ the name is dynamically created from route's url path</p>
             
 
 <div class="doc-member panel panel-default">
-    <div class="panel-heading" id="getUrl">
+    <div class="panel-heading" id="listen">
         <div class="row">
             <div class="panel-title   ">
-                <strong>getUrl</strong><span class="signature">(<span class="optional">pathParams</span>, <span class="optional">queryParams</span>)</span><i class="return-type-icon"></i><span class="type-signature"><code>String</code></span>
+                <strong>listen</strong><span class="signature">(<span class="optional">port|socket</span>)</span>
             </div>
+            
+                <div class="panel-attributes">
+                    <span class="abstract badge">abstract</span>
+                </div>
             
         </div>
         <div class="row sub-heading">
@@ -2041,8 +2239,6 @@ the name is dynamically created from route's url path</p>
         
 
 
-    <p>returns hostname relative route endpoint</p>
-
         
 
 
@@ -2062,7 +2258,7 @@ the name is dynamically created from route's url path</p>
 <ul class="params">
     <li>
         
-            <b>pathParams</b>
+            <b>port|socket</b>
         
 
         
@@ -2074,34 +2270,7 @@ the name is dynamically created from route's url path</p>
     </li>
     <ul class="list-unstyled">
         
-            <li>Type: <code class="text-nowrap">Object</code>
-</li>
-        
-
-        
-
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>queryParams</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">Object</code>
+            <li>Type: <code class="text-nowrap">Integer</code> or <code class="text-nowrap">String</code>
 </li>
         
 
@@ -2124,25 +2293,6 @@ the name is dynamically created from route's url path</p>
         
 
         
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap">String</code>
-
-            
-
-            
-
-            
-        </span>
-    
 
         
 
@@ -2155,10 +2305,10 @@ the name is dynamically created from route's url path</p>
             
 
 <div class="doc-member panel panel-default">
-    <div class="panel-heading" id="validate">
+    <div class="panel-heading" id="on">
         <div class="row">
-            <div class="panel-title override  ">
-                <strong>validate</strong><span class="signature">(valDef, dataProp)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="Route.html">Route</a></code></span>
+            <div class="panel-title   ">
+                <strong>on</strong><span class="signature">(event, callback)</span><i class="return-type-icon"></i><span class="type-signature"><code>Boolean</code></span>
             </div>
             
         </div>
@@ -2180,7 +2330,7 @@ the name is dynamically created from route's url path</p>
         
 
 
-    <p>pushes specifically configured validation middleware to the route's call stack</p>
+    <p>registeres event listener.<br>overrides event emmiter implementation</p>
 
         
 
@@ -2201,187 +2351,9 @@ the name is dynamically created from route's url path</p>
 <ul class="params">
     <li>
         
-            <b>valDef</b>
+            <b>event</b>
         
 
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">string</code> or <code class="text-nowrap">Object</code>
-</li>
-        
-
-        
-
-        
-            <li><p>string =&gt; registered validator's name. Object =&gt; schema definition</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>dataProp</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">string</code>
-</li>
-        
-
-        
-
-        
-            <li><p>query|body|params|headers</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap"><a href="Route.html">Route</a></code>
-
-            
-
-            
-                <ul>
-<li>self</li>
-</ul>
-            
-
-            
-        </span>
-    
-
-        
-
-        
-            
-
-<div class="detail-content">
-    <h5><b>Example</b>:</h5>
-
-    
-
-        
-        <pre class="prettyprint"><code>route.validate({
-    properties: {
-        username: {type: 'string'}
-    }
-}, query);
-
-//
-
-route.validate('ajv-registered-validation-schema-uid', 'body');</code></pre>
-        
-    
-</div>
-        
-    </div>
-    
-</div>
-
-        </dl>
-    
-
-    <!-- PRIVATE METHODS -->
-    
-
-    <!-- INHERITED METHODS -->
-    
-        <div class="page-header">
-            <h3>Inherited Methods</h3>
-        </div>
-
-        <dl>
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="addStep">
-        <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>addStep</strong><span class="signature">(<span class="optional">name</span>, fn)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>allows to hook up any middleware function to the request promise chain (call stack)</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>name</b>
-        
-
-        
-            <span class="optional badge">optional</span>
         
         
         
@@ -2395,362 +2367,6 @@ route.validate('ajv-registered-validation-schema-uid', 'body');</code></pre>
 
         
 
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>fn</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">function</code>
-</li>
-        
-
-        
-
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap"><a href="RouteInterface.html">RouteInterface</a></code>
-
-            
-
-            
-                <ul>
-<li>self</li>
-</ul>
-            
-
-            
-        </span>
-    
-
-        
-
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="build">
-        <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>build</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>function</code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>constructs single function which takes req &amp; res &amp; next arguments</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap">function</code>
-
-            
-
-            
-
-            
-        </span>
-    
-
-        
-
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="buildResponse">
-        <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>buildResponse</strong><span class="signature">(cb)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="Response.html">Response</a></code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>the Response object can be returned from within route middleware - that will
-cause promise call chain interruption of current request and prioritized response</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>cb</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">function</code>
-</li>
-        
-
-        
-
-        
-            <li><p>callback function which sets response on the express <code>res</code> object. The function's context is always set to the <code>res</code> object</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap"><a href="Response.html">Response</a></code>
-
-            
-
-            
-
-            
-        </span>
-    
-
-        
-
-        
-            
-
-<div class="detail-content">
-    <h5><b>Example</b>:</h5>
-
-    
-
-        
-        <pre class="prettyprint"><code>route.step(function() {
-    return route.buildResponse(function() {
-        this.json({response: 'data'});
-    }):
-}).step(function() {
-    //will never be called
-});</code></pre>
-        
-    
-</div>
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="catch">
-        <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>catch</strong><span class="signature">(<span class="optional">filter</span>, callback)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>catch promise stack handler invoked when an Error occurs while executing one
-of the routes` middlwares</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>filter</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">function</code>
-</li>
-        
-
-        
-
-        
-            <li><p>must be a constructor with .prototype property that is instanceof Error</p></li>
         
 
         
@@ -2803,108 +2419,7 @@ of the routes` middlwares</p>
 
         <span class="returns">
             
-                <code class="text-nowrap"><a href="RouteInterface.html">RouteInterface</a></code>
-
-            
-
-            
-                <ul>
-<li>self</li>
-</ul>
-            
-
-            
-        </span>
-    
-
-        
-
-        
-            
-
-<div class="detail-content">
-    <h5><b>Example</b>:</h5>
-
-    
-
-        
-        <pre class="prettyprint"><code>route.main(function() {
-  throw new TypeError('test');
-}).catch(TypeError, function(err, req, res) {
-  //err handler logic
-});</code></pre>
-        
-    
-</div>
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="getAllSteps">
-        <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>getAllSteps</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>Array</code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>returns route's internal middleware call stack</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap">Array</code>
+                <code class="text-nowrap">Boolean</code>
 
             
 
@@ -2925,11 +2440,15 @@ of the routes` middlwares</p>
             
 
 <div class="doc-member panel panel-default">
-    <div class="panel-heading" id="main">
+    <div class="panel-heading" id="use">
         <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>main</strong><span class="signature">(fn)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
+            <div class="panel-title   ">
+                <strong>use</strong><span class="signature">(<span class="optional">endpoint</span>, <span class="optional">callback</span>)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="AppInterface.html">AppInterface</a></code></span>
             </div>
+            
+                <div class="panel-attributes">
+                    <span class="abstract badge">abstract</span>
+                </div>
             
         </div>
         <div class="row sub-heading">
@@ -2949,6 +2468,9 @@ of the routes` middlwares</p>
     <div class="panel-body">
         
 
+
+    <p>bind application-level middleware that will be run before <code>Route</code>'s
+middleware stack</p>
 
         
 
@@ -2969,392 +2491,7 @@ of the routes` middlwares</p>
 <ul class="params">
     <li>
         
-            <b>fn</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">function</code>
-</li>
-        
-
-        
-
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap"><a href="RouteInterface.html">RouteInterface</a></code>
-
-            
-
-            
-                <ul>
-<li>self</li>
-</ul>
-            
-
-            
-        </span>
-    
-
-        
-
-        
-            
-
-<div class="detail-content">
-    <h5><b>Example</b>:</h5>
-
-    
-
-        
-        <pre class="prettyprint"><code>route.main(() => {})
-
-//is same as:
-
-route.addStep('main', () => {})</code></pre>
-        
-    
-</div>
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="rejectsContentType">
-        <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>rejectsContentType</strong><span class="signature">(type)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>define a content-type which should be always rejected by this route.
-Content types black listed by this method can be later white listed by the
-<a href="RouteInterface.html#acceptsContentType"><code>RouteInterface#acceptsContentType</code></a> method</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>type</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">String</code>
-</li>
-        
-
-        
-
-        
-            <li><p>Content-Type header value</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap"><a href="RouteInterface.html">RouteInterface</a></code>
-
-            
-
-            
-
-            
-        </span>
-    
-
-        
-
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="respondsWith">
-        <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>respondsWith</strong><span class="signature">(descriptor)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>allows to describe route's response data format in form of <code>Ajv</code> validation
-schema definition or <code>Error</code> instance object/constructor which implements <code>toSwagger</code> method.<br>if a <code>string</code> is provided it's expected to be validation schema unique indentifier
-registered with the Ajv instance.<br>With <code>res.filter({json: 'data'}).json()</code> conjuction, data can be filtered
-with defined response schema.</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>descriptor</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">Object</code> or <code class="text-nowrap">String</code> or <code class="text-nowrap">function</code>
-</li>
-        
-
-        
-
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap"><a href="RouteInterface.html">RouteInterface</a></code>
-
-            
-
-            
-                <ul>
-<li>self</li>
-</ul>
-            
-
-            
-        </span>
-    
-
-        
-
-        
-            
-
-<div class="detail-content">
-    <h5><b>Example</b>:</h5>
-
-    
-
-        
-        <pre class="prettyprint"><code>route.respondsWith({
-    type: 'object',
-    additionalProperties: false,
-    properties: {
-        prop1: {type: 'string'}
-    }
-});
-
-route.main(function(req, res) {
-    res.filter({prop1: 'included', prop2: 'filtered out'}).json();
-});</code></pre>
-        
-    
-</div>
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="step">
-        <div class="row">
-            <div class="panel-title inherit  ">
-                <strong>step</strong><span class="signature">(<span class="optional">name</span>, fn)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>alias for <a href="RouteInterface.html#addStep"><code>RouteInterface#addStep</code></a></p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>name</b>
+            <b>endpoint</b>
         
 
         
@@ -3381,9 +2518,11 @@ route.main(function(req, res) {
 <ul class="params">
     <li>
         
-            <b>fn</b>
+            <b>callback</b>
         
 
+        
+            <span class="optional badge">optional</span>
         
         
         
@@ -3424,7 +2563,7 @@ route.main(function(req, res) {
 
         <span class="returns">
             
-                <code class="text-nowrap"><a href="RouteInterface.html">RouteInterface</a></code>
+                <code class="text-nowrap"><a href="AppInterface.html">AppInterface</a></code>
 
             
 
@@ -3448,7 +2587,1051 @@ route.main(function(req, res) {
         </dl>
     
 
+    <!-- PRIVATE METHODS -->
+    
+
+    <!-- INHERITED METHODS -->
+    
+
     <!-- EVENTS -->
+    
+        <div class="page-header">
+            <h3>Events</h3>
+        </div>
+
+        <dl>
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="event:build-router">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>build-router</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>emitted with each <a href="AppInterface.html#buildRouter"><code>AppInterface#buildRouter</code></a> method call.</p>
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+
+<ul class="properties">
+    <li>
+        
+            <b>router</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap"><a href="RouterInterface.html">RouterInterface</a></code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="event:error">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>error</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>fires each time an unexpected internal Error is encoutered.
+When the Error is catched in user space
+(aka. doesn't happen outside of the application scope), the Error is converted
+to <a href="ServiceError.html"><code>ServiceError</code></a> which is safe to respond with.  </p>
+<p>Internal listener is binded at initialization time which logs all received
+Errors. <a href="AppInterface.html#status"><code>AppInterface#status</code></a> is also updated with the first internal error.</p>
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+
+<ul class="properties">
+    <li>
+        
+            <b>error</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Error</code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="event:error-response">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>error-response</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>By default an <a href="AppInterface.html"><code>App</code></a> handles all &quot;expected&quot; &amp; unexpected Errors automatically
+and responds to a request accordingly.<br>By pushing a listener to this event, you have a chance to define custom user
+error processing logic and respond to the request manually.<br>Listeners of this event are executed asynchronously - Promises are supported.</p>
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+
+<ul class="properties">
+    <li>
+        
+            <b>err</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap"><a href="RequestError.html">RequestError</a></code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="properties">
+    <li>
+        
+            <b>res</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">http.ServerResponse</code>
+</li>
+        
+
+        
+
+        
+            <li><p>response</p></li>
+        
+
+        
+    </ul>
+</ul>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            
+
+<div class="detail-content">
+    <h5><b>Example</b>:</h5>
+
+    
+
+        
+        <pre class="prettyprint"><code>app.on('error-response', function(err, res) {
+    //pseudocode:
+    //renders html view and sends html response instead of default json response
+    return res.render('error', err); //returns a Promise
+});</code></pre>
+        
+    
+</div>
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="event:listening">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>listening</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>reflects http[s] server <code>listening</code> event</p>
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+
+<ul class="properties">
+    <li>
+        
+            <b>app</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap"><a href="AppInterface.html">AppInterface</a></code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="event:post-build">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>post-build</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>emitted after app route definitions are assembled into a single function and
+binded to internal http[s] server.</p>
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+
+<ul class="properties">
+    <li>
+        
+            <b>app</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap"><a href="AppInterface.html">AppInterface</a></code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="event:post-init">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>post-init</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>emitted after internal initialization of the App instance. At this point the
+App instance should be fully initiallized.</p>
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+
+<ul class="properties">
+    <li>
+        
+            <b>app</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap"><a href="AppInterface.html">AppInterface</a></code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="event:pre-build">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>pre-build</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>emitted before app route definitions are assembled into a single function.</p>
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+
+<ul class="properties">
+    <li>
+        
+            <b>app</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap"><a href="AppInterface.html">AppInterface</a></code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="event:pre-init">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>pre-init</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>emitted before internal initialization of the App instance</p>
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+
+<ul class="properties">
+    <li>
+        
+            <b>app</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap"><a href="AppInterface.html">AppInterface</a></code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="event:status-changed">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>status-changed</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>emitted once each time after status change.
+Once you get <code>AppStatus#ERROR</code> status, the App's status can NOT
+be changed thus no more <code>status-changed</code> events will be emitted.</p>
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+
+<ul class="properties">
+    <li>
+        
+            <b>status</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+
+        
+            <li><p>see <a href="global.html#AppStatus"><code>AppStatus</code></a> enum for available option values</p></li>
+        
+
+        
+    </ul>
+</ul>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="event:unknown-error">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>unknown-error</strong>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>Is emitted before a response to a request is sent and allows to convert
+an unknown error (an error which is not instanceof <a href="RequestError.html"><code>RequestError</code></a>
+and at the same time is not <strong>dirrect</strong> instanceof <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>)
+to <a href="RequestError.html"><code>RequestError</code></a> which will be then processed in place of the original unknown error object.<br>if no listener is present all unknown errors will be automatically converted to <a href="ServiceError.html"><code>ServiceError</code></a></p>
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+
+<ul class="properties">
+    <li>
+        
+            <b>err</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Error</code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="properties">
+    <li>
+        
+            <b>errorHandler</b>
+        
+
+        
+        
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">function</code>
+</li>
+        
+
+        
+
+        
+            <li><p>callback function</p></li>
+        
+
+        
+    </ul>
+</ul>
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            
+
+<div class="detail-content">
+    <h5><b>Example</b>:</h5>
+
+    
+
+        
+        <pre class="prettyprint"><code>app.on('unknown-error', function(err, errorHandler) {
+    if (err instanceof SequelizeUniqueConstraintError) {
+        return errorHandler(new RequestError('Entity already exists'));
+    }
+    //hand back the error processing to the application
+    return errorHandler(err);
+});</code></pre>
+        
+    
+</div>
+        
+    </div>
+    
+</div>
+
+        </dl>
     
 
     <!-- PRIVATE EVENTS -->
