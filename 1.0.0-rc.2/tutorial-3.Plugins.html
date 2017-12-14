@@ -1133,19 +1133,56 @@
 <header>
     
 
-    <h2>CLI Interface</h2>
+    <h2>Plugins/Extensions</h2>
 </header>  
 
 <article>
-    <pre class="prettyprint source lang-bash"><code>node_modules/.bin/bi-service &lt;command> [options]
-
-Commands:
-  run [options..]  Starts bi-service app - expects it to be located under cwd   [aliases: start, serve]
-
-Options:
-  --config    Custom config file destination     [string]
-  --version   Prints bi-service version         [boolean]
-  -h, --help  Show help                         [boolean]</code></pre><p>Each commands options can be listed by issuing <code>bi-service &lt;command&gt; --help</code>.<br>Also, available <code>bi-service</code> command collection can be extended by installing one of the <a href="tutorial-3.Plugins.html">Plugins/Extensions</a>.<br>For user-defined custom shell command definitions, use <a href="https://github.com/BohemiaInteractive/bi-service-shell">bi-service-shell</a> plugin.  </p>
+    <ul>
+<li><a href="https://github.com/BohemiaInteractive/bi-service-template">bi-service-template</a><ul>
+<li>(Runnable) Project skeleton generation based on minimal user input</li>
+</ul>
+</li>
+<li><a href="https://github.com/BohemiaInteractive/bi-service-doc">bi-service-doc</a><ul>
+<li>Automatic web service API documentation generation.  </li>
+<li>Provides standard interface for receiving endpoint definitions in <a href="https://www.openapis.org">Open API</a> format</li>
+</ul>
+</li>
+<li><a href="https://github.com/BohemiaInteractive/bi-service-cli">bi-service-cli</a><ul>
+<li>Web Service inspection features</li>
+<li>REPL console</li>
+</ul>
+</li>
+<li><a href="https://github.com/BohemiaInteractive/bi-service-sdk">bi-service-sdk</a><ul>
+<li>Client SDK (<code>npm</code> package) generation for <code>bi-service</code> based services.</li>
+<li>Provides common <code>BIServiceSDK</code> abstract interface which all generated SDKs extend from.</li>
+</ul>
+</li>
+<li><a href="https://github.com/BohemiaInteractive/bi-service-shell">bi-service-shell</a><ul>
+<li>user-defined shell commands</li>
+</ul>
+</li>
+<li><a href="https://github.com/BohemiaInteractive/bi-service-sdk-cache">bi-service-sdk-cache</a><ul>
+<li>caching capabilities for generated Web Service Client SDKs.</li>
+</ul>
+</li>
+<li><a href="https://github.com/BohemiaInteractive/bi-service-rabbitmq">bi-service-rabbitmq</a><ul>
+<li>AMQP 0.9.1 integration</li>
+</ul>
+</li>
+<li><a href="https://github.com/BohemiaInteractive/bi-service-couchbase">bi-service-couchbase</a><ul>
+<li>Couchbase (NoSQL) storage integration</li>
+</ul>
+</li>
+<li><a href="https://github.com/BohemiaInteractive/bi-service-sequelize">bi-service-sequelize</a><ul>
+<li>SQL storage integration</li>
+</ul>
+</li>
+<li><a href="https://github.com/BohemiaInteractive/bi-db-migrations">bi-db-migrations</a><ul>
+<li>SQL migrations done with plain SQL backed with semver releases.</li>
+<li>Can be used as a standalone module.</li>
+</ul>
+</li>
+</ul>
 </article>
 
 </section>  
