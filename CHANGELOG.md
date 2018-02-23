@@ -1,3 +1,10 @@
+## FUTURE
+
+* [REMOVED] - `--get-conf` deprecated command which has been replaced with `get:config` cmd
+* [REMOVED] - `App.prototype.useSession` deprecated method
+* [CHANGED] - `ForiddenError` constructor does not accept `message` option as deprecated second argument
+* [CHANGED] - `bi-config@3.x` (which provides service configuration implementation) has dropped `json5` format in favor of `config.js` (default) and plain `config.json`
+
 ## v1.1.1
 
 * [FIXED] - `bi-service` executable - should not leak synchronous exceptions when executing a custom shell command. Those errors will be properly catched and printed to stderr before exit.

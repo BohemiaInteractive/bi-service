@@ -25,23 +25,7 @@ require('json5/lib/require');
 if (module.parent === null) {
 
     _yargs = _initializeYargs(yargs);
-
-    _yargs = _yargs.command('*', '', {
-        'get-conf': {//deprecated (has been replated by get:config cmd)
-            alias: 'g',
-            describe: 'Prints resolved config value',
-            type: 'string'
-        },
-        json5: {//deprecated (has been replated by get:config cmd)
-            describe: 'if any json data are about to be printed they will be converted to json5 format',
-            type: 'boolean',
-            default: false
-        },
-        offset: {//deprecated (has been replated by get:config cmd)
-            describe: "A String or Number that's used to insert white space into the output JSON string for readability purposes.",
-            default: 4
-        }
-    }, defaultCmd);
+    _yargs = _yargs.command('*', '', {}, defaultCmd);
 
     _yargs.strict(false).wrap(yargs.terminalWidth()).argv;
 }
@@ -162,39 +146,34 @@ function getConfigCmd(argv) {
  * @param {Object} argv - shell arguments
  */
 function defaultCmd(argv) {
-
-    if (argv['get-conf'] !== undefined) {
-        getConfigCmd(argv);
     //if no supported commands or options were matched so far,
-    //we try to look for user defined shell commands:
+    //we look for user defined shell commands:
+    config.initialize({fileConfigPath: argv.config});
+    let ya = require('yargs/yargs')();
+
+    ya.wrap(yargs.terminalWidth());
+    _initializeYargs(ya).help();
+
+    if (fs.existsSync(PROJECT_INDEX)) {
+        let service = require(PROJECT_INDEX);
+        service.appManager.on('build-app', _onBuildApp);
+
+        return service.$setup({
+            //inspect only resources with exclusive 'shell' tag
+            integrity: ['shell']
+        }).then(function() {
+            return _setImmediate(_registerShellCommands, argv, ya, Service, service);
+        }).catch(function(err) {
+            if (err.toLogger instanceof Function) {
+                err = err.toLogger()
+            } else if (err.toJSON instanceof Function) {
+                err = err.toJSON();
+            }
+            console.error(err);
+            process.exit(1);
+        });
     } else {
-        config.initialize({fileConfigPath: argv.config});
-        let ya = require('yargs/yargs')();
-
-        ya.wrap(yargs.terminalWidth());
-        _initializeYargs(ya).help();
-
-        if (fs.existsSync(PROJECT_INDEX)) {
-            let service = require(PROJECT_INDEX);
-            service.appManager.on('build-app', _onBuildApp);
-
-            return service.$setup({
-                //inspect only resources with exclusive 'shell' tag
-                integrity: ['shell']
-            }).then(function() {
-                return _setImmediate(_registerShellCommands, argv, ya, Service, service);
-            }).catch(function(err) {
-                if (err.toLogger instanceof Function) {
-                    err = err.toLogger()
-                } else if (err.toJSON instanceof Function) {
-                    err = err.toJSON();
-                }
-                console.error(err);
-                process.exit(1);
-            });
-        } else {
-            return _setImmediate(_registerShellCommands, argv, ya, Service);
-        }
+        return _setImmediate(_registerShellCommands, argv, ya, Service);
     }
 }
 
