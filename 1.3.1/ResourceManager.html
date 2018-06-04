@@ -1173,10 +1173,97 @@
         
 
 
+
+<section>
+
+<header>
+    <h1>
+    
+        ResourceManager
+    
+    
+    </h1>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+        
+
+        
+            
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+
     
 
+    
 
-    <h3>bi-service 1.3.0</h3>
+    <!-- CONSTANTS -->
+    
+
+    <!-- MEMBERS -->
+    
+
+    <!-- PRIVATE MEMBERS -->
+    
+
+    <!-- CONSTRUCTOR -->
+    
+        <div class="page-header">
+            <h3>Constructor</h3>
+        </div>
+
+        <dl>
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="ResourceManager">
+        <div class="row">
+            <div class="panel-title   ">
+                new <strong>ResourceManager</strong><span class="signature">()</span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>A Resource can be any object that implements <code>inspectIntegrity</code> method which
+must return a <code>Promise</code>.</p>
+
+        
 
 
 
@@ -1184,37 +1271,1024 @@
 
 
 
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </div>
+    
+</div>
+</dl>
+    
+
+    <!-- METHODS -->
+    
+        <div class="page-header">
+            <h3>Methods</h3>
+        </div>
+
+        <dl>
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="add">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>add</strong><span class="signature">(key, resource)</span><i class="return-type-icon"></i><span class="type-signature"><code>Object</code></span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+            <h5><b>Parameters</b>:</h5>
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>key</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>resource</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Object</code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap">Object</code>
+
+            
+
+            
+                resource object
+            
+
+            
+        </span>
+    
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="get">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>get</strong><span class="signature">(key)</span><i class="return-type-icon"></i><span class="type-signature"><code>Object</code></span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+            <h5><b>Parameters</b>:</h5>
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>key</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+
+        
+            <li><p>resource key as provided to <a href="ResourceManager.html#register"><code>ResourceManager#register</code></a></p></li>
+        
+
+        
+    </ul>
+</ul>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap">Object</code>
+
+            
+
+            
+                resource object
+            
+
+            
+        </span>
+    
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="has">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>has</strong><span class="signature">(key)</span><i class="return-type-icon"></i><span class="type-signature"><code>Boolean</code></span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+            <h5><b>Parameters</b>:</h5>
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>key</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+
+        
+            <li><p>resource key as provided to <a href="ResourceManager.html#register"><code>ResourceManager#register</code></a></p></li>
+        
+
+        
+    </ul>
+</ul>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap">Boolean</code>
+
+            
+
+            
+
+            
+        </span>
+    
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="inspectIntegrity">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>inspectIntegrity</strong><span class="signature">(<span class="optional">tag</span>, <span class="optional">options</span>)</span><i class="return-type-icon"></i><span class="type-signature"><code>Promise</code></span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>inspects integrity of a group of registered resources.<br>Groups are recognized via resource tags. if no group is provided, all resources
+will be inspected.<br>This method operates in two modes <code>include</code>/<code>exclude</code> - where <code>include</code> mode
+inspects a provided resource group (tag) as opposed to <code>exclude</code> which
+inspects all resources which are NOT assigned provided tag.</p>
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+            <h5><b>Parameters</b>:</h5>
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>tag</b>
+        
+
+        
+            <span class="optional badge">optional</span>
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+            <li>Default: <code>'*'</code></li>
+        
+
+        
+            <li><p>identifies a span of resources which will be inspected</p></li>
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>options</b>
+        
+
+        
+            <span class="optional badge">optional</span>
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Object</code>
+</li>
+        
+
+        
+
+        
+
+        
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>mode</b>
+        
+
+        
+            <span class="optional badge">optional</span>
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+            <li>Default: <code>'include'</code></li>
+        
+
+        
+            <li><p>include | exclude</p></li>
+        
+
+        
+    </ul>
+</ul>
+
+        
+    </ul>
+</ul>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap">Promise</code>
+
+            
+
+            
+
+            
+        </span>
+    
+
+        
+
+        
+            
+
+<div class="detail-content">
+    <h5><b>Example</b>:</h5>
 
     
 
+        
+        <pre class="prettyprint"><code>resourceManager.register('mysql', mysqlAdapter);
+resourceManager.register('postgres', postgresAdapter);
+resourceManager.register('rabbit', amqpAdapter);
+
+resourceManager.tag('postgres', 'database');
+resourceManager.tag('mysql', 'database');
+
+return resourceManager.inspectIntegrity('database'); //inspects only mysql & postgres</code></pre>
+        
+    
+</div>
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="register">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>register</strong><span class="signature">(key, resource)</span><i class="return-type-icon"></i><span class="type-signature"><code>Object</code></span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>The resource is given default tag which is equal to the resource key.</p>
+
+        
 
 
 
-    <section>
-        <article class="readme"><p><a target="_blank" href="https://travis-ci.org/BohemiaInteractive/bi-service"><img src="https://travis-ci.org/BohemiaInteractive/bi-service.svg?branch=master" alt="Build Status"></a>  <a target="_blank" href="https://codeclimate.com/github/BohemiaInteractive/bi-service/coverage"><img src="https://codeclimate.com/github/BohemiaInteractive/bi-service/badges/coverage.svg" alt="Test Coverage"></a> <a target="_blank" href="https://www.npmjs.com/package/bi-service"><img src="https://badge.fury.io/js/bi-service.svg" alt="npm version"></a>  </p>
-<p><code>bi-service</code> is an abstraction layer with common interface for creating not-only web applications but also any apps that match the <code>request &amp; response</code> pattern whether an underlying communication protocol is <code>HTTP</code>, <code>AMQP</code> (message queues), <code>IPC</code> (shell) or other..<br>Emphasis is put among other <a target="_blank" href="https://github.com/BohemiaInteractive/bi-service#features">features</a> on product API documentation, validation, error handling and automation of perpetually repeated tasks.</p>
-<h2>Features</h2><ul>
-<li><strong>Promises!</strong></li>
-<li>Environment-aware</li>
-<li>App lifecycle events</li>
-<li>Resource &amp; Service integrity inspection capabilities (health monitoring)</li>
-<li><strong>Documentation autogeneration</strong></li>
-<li><strong>A SDK client package autogeneration</strong></li>
-<li>built-in caching solution</li>
-<li>response data filters</li>
-<li>request data validation</li>
-<li>shell integration</li>
-<li>Semantic Service versioning</li>
-<li>and more (see Public API Reference)!</li>
+
+
+
+
+
+
+
+        
+            <h5><b>Parameters</b>:</h5>
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>key</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+
+        
+            <li><p>resource identifier</p></li>
+        
+
+        
+    </ul>
 </ul>
-<h2>Resources</h2><ul>
-<li><a target="_blank" href="https://bohemiainteractive.github.io/bi-service/tutorial-1.Getting-started.html">Getting started</a></li>
-<li><a target="_blank" href="https://bohemiainteractive.github.io/bi-service/">Public API Reference</a></li>
-<li><a href="./CHANGELOG.md">Changelog</a></li>
-</ul>
-<h2>Tests</h2><p><code>npm test</code></p></article>
-    </section>
 
+<ul class="params">
+    <li>
+        
+            <b>resource</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Object</code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <h5><b>Throws</b>:</h5>
+            
+
+<div class="exceptions">
+    <ul>
+    
+        
+            <li>
+                <code class="text-nowrap">TypeError</code>
+
+                
+            </li>
+        
+    
+    </ul>
+</div>
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap">Object</code>
+
+            
+
+            
+                <ul>
+<li>resource object</li>
+</ul>
+            
+
+            
+        </span>
+    
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="remove">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>remove</strong><span class="signature">(key)</span><i class="return-type-icon"></i><span class="type-signature"><code>Object</code> or <code>undefined</code></span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+            <h5><b>Parameters</b>:</h5>
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>key</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+
+        
+            <li><p>resource key as provided to <a href="ResourceManager.html#register"><code>ResourceManager#register</code></a></p></li>
+        
+
+        
+    </ul>
+</ul>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap">Object</code> or <code class="text-nowrap">undefined</code>
+
+            
+
+            
+                removed resource object or <code>undefined</code> when nothing was removed
+            
+
+            
+        </span>
+    
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="tag">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>tag</strong><span class="signature">(key, <span class="repeatable">tag</span>)</span><i class="return-type-icon"></i><span class="type-signature"><code>undefined</code></span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>assigns tag(s) to a resource. Tags meet the role of groups of resources.<br>You can use a tag instead of a resource key to identify and target a span of resources.</p>
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+            <h5><b>Parameters</b>:</h5>
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>key</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+
+        
+            <li><p>resource key as provided to <a href="ResourceManager.html#register"><code>ResourceManager#register</code></a></p></li>
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>tag</b>
+        
+
+        
+        
+            <span class="repeatable badge">repeatable</span>
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap">undefined</code>
+
+            
+
+            
+
+            
+        </span>
+    
+
+        
+
+        
+    </div>
+    
+</div>
+
+        </dl>
+    
+
+    <!-- PRIVATE METHODS -->
+    
+
+    <!-- INHERITED METHODS -->
+    
+
+    <!-- EVENTS -->
+    
+
+    <!-- PRIVATE EVENTS -->
+    
+
+    <!-- TYPE DEFS -->
+    
+</article>
+
+</section>
 
 
 
