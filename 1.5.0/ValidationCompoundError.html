@@ -1234,7 +1234,7 @@
 <header>
     <h1>
     
-        RequestError
+        ValidationCompoundError
     
     
     </h1>
@@ -1255,7 +1255,7 @@
             <h4 class="subsection-title"><b>Extends</b></h4>
             <ul class="list-unstyled">
                 
-                    <li>Error</li>
+                    <li><a href="ValidationError.html">ValidationError</a></li>
                 
             </ul>
         
@@ -1294,10 +1294,72 @@
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="code">
         <div class="row">
-            <div class="panel-title   ">
+            <div class="panel-title override  ">
                 <strong>code</strong>
             </div>
             
+                <div class="panel-attributes">
+                    <span class="readonly badge">readonly</span>
+                </div>
+                
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+        
+
+        
+
+
+
+<div class="detail-content tag-default">
+    <strong>Default:</strong>
+    
+        <code class="prettyprint">400</code>
+    
+</div>
+
+
+
+
+
+
+
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="failures">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>failures</strong>
+            </div>
+            
+                <div class="panel-attributes">
+                    <span class="readonly badge">readonly</span>
+                </div>
+                
         </div>
         <div class="row sub-heading">
             
@@ -1320,7 +1382,7 @@
         
 <div class="detail-content">
     <h5><b>Type</b>:</h5>
-    <code class="text-nowrap">Number</code>
+    <code class="text-nowrap">[Object, ...]</code>
 
 </div>
 
@@ -1336,6 +1398,24 @@
 
 
 
+        
+            
+
+<div class="detail-content">
+    <h5><b>Example</b>:</h5>
+
+    
+
+        
+        <pre class="prettyprint"><code>[
+  {
+    dataPath: '.name',
+    message: 'should be a string'
+  }
+]</code></pre>
+        
+    
+</div>
         
     </div>
     
@@ -1347,7 +1427,7 @@
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="message">
         <div class="row">
-            <div class="panel-title   ">
+            <div class="panel-title inherit  ">
                 <strong>message</strong>
             </div>
             
@@ -1409,10 +1489,10 @@
         <dl>
 
 <div class="doc-member panel panel-default">
-    <div class="panel-heading" id="RequestError">
+    <div class="panel-heading" id="ValidationCompoundError">
         <div class="row">
             <div class="panel-title   ">
-                new <strong>RequestError</strong><span class="signature">(<span class="optional">options</span>)</span>
+                new <strong>ValidationCompoundError</strong><span class="signature">(context)</span>
             </div>
             
         </div>
@@ -1434,11 +1514,6 @@
         
 
 
-    <p>Fundamental request error. An application always responds on a request with
-an error that is instance of <a href="RequestError.html"><code>RequestError</code></a> (in case an error has been encoutered).
-Errors encountered which are NOT instance of <a href="RequestError.html"><code>RequestError</code></a>
-will be converted before further processing so that the condition is met.</p>
-
         
 
 
@@ -1458,11 +1533,9 @@ will be converted before further processing so that the condition is met.</p>
 <ul class="params">
     <li>
         
-            <b>options</b>
+            <b>context</b>
         
 
-        
-            <span class="optional badge">optional</span>
         
         
         
@@ -1470,14 +1543,12 @@ will be converted before further processing so that the condition is met.</p>
     </li>
     <ul class="list-unstyled">
         
-            <li>Type: <code class="text-nowrap">Object</code> or <code class="text-nowrap">String</code>
+            <li>Type: <code class="text-nowrap">[Object, ...]</code>
 </li>
         
 
         
 
-        
-            <li><p>options object or string message value</p></li>
         
 
         
@@ -1487,42 +1558,9 @@ will be converted before further processing so that the condition is met.</p>
 <ul class="params">
     <li>
         
-            <b>code</b>
+            <b>keyword</b>
         
 
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">Integer</code>
-</li>
-        
-
-        
-            <li>Default: <code>400</code></li>
-        
-
-        
-            <li><p>applies only when <code>apiCode</code> option is not set</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>apiCode</b>
-        
-
-        
-            <span class="optional badge">optional</span>
         
         
         
@@ -1545,11 +1583,9 @@ will be converted before further processing so that the condition is met.</p>
 <ul class="params">
     <li>
         
-            <b>message</b>
+            <b>dataPath</b>
         
 
-        
-            <span class="optional badge">optional</span>
         
         
         
@@ -1557,12 +1593,10 @@ will be converted before further processing so that the condition is met.</p>
     </li>
     <ul class="list-unstyled">
         
-            <li>Type: <code class="text-nowrap">message</code>
+            <li>Type: <code class="text-nowrap">String</code>
 </li>
         
 
-        
-            <li>Default: <code>'Bad Request'</code></li>
         
 
         
@@ -1574,11 +1608,9 @@ will be converted before further processing so that the condition is met.</p>
 <ul class="params">
     <li>
         
-            <b>desc</b>
+            <b>schemaPath</b>
         
 
-        
-            <span class="optional badge">optional</span>
         
         
         
@@ -1586,14 +1618,112 @@ will be converted before further processing so that the condition is met.</p>
     </li>
     <ul class="list-unstyled">
         
-            <li>Type: <code class="text-nowrap">message</code>
+            <li>Type: <code class="text-nowrap">String</code>
 </li>
         
 
         
 
         
-            <li><p>description for swagger doc spec - is intended to be used in child Error constructor only</p></li>
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>params</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Object</code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>parentSchema</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">Object</code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>data</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">mixed</code>
+</li>
+        
+
+        
+
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>message</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">String</code>
+</li>
+        
+
+        
+
         
 
         
@@ -1627,8 +1757,14 @@ will be converted before further processing so that the condition is met.</p>
 
     <!-- METHODS -->
     
+
+    <!-- PRIVATE METHODS -->
+    
+
+    <!-- INHERITED METHODS -->
+    
         <div class="page-header">
-            <h3>Methods</h3>
+            <h3>Inherited Methods</h3>
         </div>
 
         <dl>
@@ -1637,7 +1773,7 @@ will be converted before further processing so that the condition is met.</p>
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="setUID">
         <div class="row">
-            <div class="panel-title   ">
+            <div class="panel-title inherit  ">
                 <strong>setUID</strong><span class="signature">(uid)</span>
             </div>
             
@@ -1728,7 +1864,7 @@ will be converted before further processing so that the condition is met.</p>
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="toJSON">
         <div class="row">
-            <div class="panel-title   ">
+            <div class="panel-title inherit  ">
                 <strong>toJSON</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>Object</code></span>
             </div>
             
@@ -1806,7 +1942,7 @@ will be converted before further processing so that the condition is met.</p>
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="toLogger">
         <div class="row">
-            <div class="panel-title   ">
+            <div class="panel-title inherit  ">
                 <strong>toLogger</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>Object</code></span>
             </div>
             
@@ -1887,7 +2023,7 @@ available instead of just public user facing error description.</p>
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="toSwagger">
         <div class="row">
-            <div class="panel-title   ">
+            <div class="panel-title inherit  ">
                 <strong>toSwagger</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>Object</code></span>
             </div>
             
@@ -1962,12 +2098,6 @@ available instead of just public user facing error description.</p>
 </div>
 
         </dl>
-    
-
-    <!-- PRIVATE METHODS -->
-    
-
-    <!-- INHERITED METHODS -->
     
 
     <!-- EVENTS -->
