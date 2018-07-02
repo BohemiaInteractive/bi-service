@@ -1230,21 +1230,34 @@
 <header>
     
 
-    <h2>CLI Interface</h2>
+    <h2>Routing</h2>
 </header>  
 
 <article>
-    <pre class="prettyprint source lang-bash"><code>node_modules/.bin/bi-service &lt;command> [options]
+    <blockquote>
+<p><strong>Routing</strong> refers to the definition of application end points (URIs) and how they respond to client requests.</p>
+</blockquote>
+<h6><em>source:expressjs.com</em></h6><p>Routes are created from <a href="Router.html"><code>Router</code></a> common factory objects:  </p>
+<pre class="prettyprint source lang-javascript"><code>    const appManager = service.appManager;
 
-Commands:
-  run [options..]   Starts bi-service app - expects it to be located under cwd   [aliases: start, serve]
-  get:config [key]  Dumbs resolved service configuration
+    const router = appManager.get('app-name').buildRouter({
+        version: 1.0,
+        url: '/api/{version}/user' //{version} placeholder will get replaced by the actual router version
+    });</code></pre><p>The following is an example of very basic route:  </p>
+<pre class="prettyprint source lang-javascript"><code>    const route = router.buildRoute({
+        type: 'get', //HTTP method type. One of the: `all`, `get`, `post`, `put`, `head`, `connect`, `options`, `delete`
+        url : '/:username', //route endpoint can be also defined as a regular expression
+        summary: 'Returns basics user data of a user with the :username',
+        desc: 'Longer description of the endpoint'
+    });
 
-Options:
-  --config    Custom config file destination     [string]
-  --version   Prints bi-service version         [boolean]
-  -h, --help  Show help                         [boolean]
-</code></pre><p>Each commands options can be listed by issuing <code>bi-service &lt;command&gt; --help</code>.<br>Also, available <code>bi-service</code> command collection can be extended by installing one of the <a href="tutorial-3.Plugins.html">Plugins/Extensions</a>.<br>For user-defined custom shell command definitions, use <a href="https://github.com/BohemiaInteractive/bi-service-shell">bi-service-shell</a> plugin.  </p>
+    route.main(function(req, res) {
+        //pseudo-code
+        return UserModel.fetch(req.params.username).then(function(user) {
+            res.json(user);
+        });
+    });</code></pre><p>The above example shows that the end points are defined on an <a href="App.html"><code>Application</code></a> object recevied from the <a href="AppManager.html"><code>AppManager</code></a>.<br>The Application is an abstraction object which implements <a href="AppInterface.html"><code>Application Interface</code></a>.<br><code>bi-service</code> comes with <a href="App.html"><code>http(s) implementation</code></a> of the <code>ApplicationInterface</code> using <code>expressjs</code> library under the hood,<br>however the interface implementation is not limited to <code>HTTP</code> protocol as anything that matches the request &amp; response pattern (shell commands, message-queue protocols etc..) can share the same user-facing interface.<br>Practical examples of such usage are <a href="https://github.com/BohemiaInteractive/bi-service-shell">bi-service-shell</a> &amp; <a href="https://github.com/BohemiaInteractive/bi-service-rabbitmq">bi-service-rabbitmq</a> plugins.</p>
+<p>For more information on route definition, please see <a href="Router.html"><code>Router</code></a> and <a href="Route.html"><code>Route</code></a> APIs.</p>
 </article>
 
 </section>  

@@ -1246,7 +1246,7 @@
     });</code></pre><p>The following is an example of very basic route:  </p>
 <pre class="prettyprint source lang-javascript"><code>    const route = router.buildRoute({
         type: 'get', //HTTP method type. One of the: `all`, `get`, `post`, `put`, `head`, `connect`, `options`, `delete`
-        url : '/:username',
+        url : '/:username', //route endpoint can be also defined as a regular expression
         summary: 'Returns basics user data of a user with the :username',
         desc: 'Longer description of the endpoint'
     });
