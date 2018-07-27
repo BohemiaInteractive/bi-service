@@ -1234,7 +1234,7 @@
 <header>
     <h1>
     
-        Route
+        RouteInterface
     
     
     </h1>
@@ -1251,13 +1251,6 @@
 
         
 
-        
-            <h4 class="subsection-title"><b>Extends</b></h4>
-            <ul class="list-unstyled">
-                
-                    <li><a href="RouteInterface.html">RouteInterface</a></li>
-                
-            </ul>
         
 
         
@@ -1294,7 +1287,7 @@
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="fileSystemLocation">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>fileSystemLocation</strong>
             </div>
             
@@ -1353,7 +1346,7 @@
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="uid">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>uid</strong>
             </div>
             
@@ -1421,10 +1414,10 @@
         <dl>
 
 <div class="doc-member panel panel-default">
-    <div class="panel-heading" id="Route">
+    <div class="panel-heading" id="RouteInterface">
         <div class="row">
             <div class="panel-title   ">
-                new <strong>Route</strong><span class="signature">(options)</span>
+                new <strong>RouteInterface</strong><span class="signature">(options)</span>
             </div>
             
         </div>
@@ -1517,33 +1510,6 @@
 <ul class="params">
     <li>
         
-            <b>type</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">String</code>
-</li>
-        
-
-        
-
-        
-            <li><p>see <a href="global.html#RequestType"><code>RequestType</code></a> enum for available option values</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
             <b>url</b>
         
 
@@ -1586,7 +1552,7 @@
         
 
         
-            <li><p>document the end point</p></li>
+            <li><p>swagger doc</p></li>
         
 
         
@@ -1613,7 +1579,7 @@
         
 
         
-            <li><p>document the end point</p></li>
+            <li><p>swagger doc</p></li>
         
 
         
@@ -1640,7 +1606,7 @@
         
 
         
-            <li><p>sdk method name for API clients</p></li>
+            <li><p>client sdk method name</p></li>
         
 
         
@@ -1700,544 +1666,9 @@
             
 
 <div class="doc-member panel panel-default">
-    <div class="panel-heading" id="getAbsoluteUrl">
-        <div class="row">
-            <div class="panel-title   ">
-                <strong>getAbsoluteUrl</strong><span class="signature">(<span class="optional">pathParams</span>, <span class="optional">queryParams</span>)</span><i class="return-type-icon"></i><span class="type-signature"><code>String</code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>returns absolute route endpoint.<br>In order to work properly service config option <code>apps.&lt;app-name&gt;.baseUrl</code> should be set</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>pathParams</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">Object</code>
-</li>
-        
-
-        
-
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>queryParams</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">Object</code>
-</li>
-        
-
-        
-
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap">String</code>
-
-            
-
-            
-
-            
-        </span>
-    
-
-        
-
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="getName">
-        <div class="row">
-            <div class="panel-title override  ">
-                <strong>getName</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>String</code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>returns route's name. If no name has been assigned,
-the name is dynamically created from route's url path</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap">String</code>
-
-            
-
-            
-
-            
-        </span>
-    
-
-        
-
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="getUrl">
-        <div class="row">
-            <div class="panel-title   ">
-                <strong>getUrl</strong><span class="signature">(<span class="optional">pathParams</span>, <span class="optional">queryParams</span>)</span><i class="return-type-icon"></i><span class="type-signature"><code>String</code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>returns hostname relative route endpoint</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>pathParams</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">Object</code>
-</li>
-        
-
-        
-
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>queryParams</b>
-        
-
-        
-            <span class="optional badge">optional</span>
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">Object</code>
-</li>
-        
-
-        
-
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap">String</code>
-
-            
-
-            
-
-            
-        </span>
-    
-
-        
-
-        
-    </div>
-    
-</div>
-
-        
-            
-
-<div class="doc-member panel panel-default">
-    <div class="panel-heading" id="validate">
-        <div class="row">
-            <div class="panel-title override  ">
-                <strong>validate</strong><span class="signature">(valDef, dataProp)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="Route.html">Route</a></code></span>
-            </div>
-            
-        </div>
-        <div class="row sub-heading">
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-
-            
-                <div class="col-sm-4"></div>
-            
-        </div>
-    </div>
-    <div class="panel-body">
-        
-
-
-    <p>pushes specifically configured validation middleware to the route's call stack</p>
-
-        
-
-
-
-
-
-
-
-
-
-
-        
-            <h5><b>Parameters</b>:</h5>
-            
-
-
-<ul class="params">
-    <li>
-        
-            <b>valDef</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">string</code> or <code class="text-nowrap">Object</code>
-</li>
-        
-
-        
-
-        
-            <li><p>string =&gt; registered validator's name. Object =&gt; schema definition</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-<ul class="params">
-    <li>
-        
-            <b>dataProp</b>
-        
-
-        
-        
-        
-
-    </li>
-    <ul class="list-unstyled">
-        
-            <li>Type: <code class="text-nowrap">string</code>
-</li>
-        
-
-        
-
-        
-            <li><p>query|body|params|headers</p></li>
-        
-
-        
-    </ul>
-</ul>
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-                <b>Returns</b>:
-            
-
-            
-
-
-        <span class="returns">
-            
-                <code class="text-nowrap"><a href="Route.html">Route</a></code>
-
-            
-
-            
-                <ul>
-<li>self</li>
-</ul>
-            
-
-            
-        </span>
-    
-
-        
-
-        
-            
-
-<div class="detail-content">
-    <h5><b>Example</b>:</h5>
-
-    
-
-        
-        <pre class="prettyprint"><code>route.validate({
-    properties: {
-        username: {type: 'string'}
-    }
-}, 'query');
-
-//or
-
-route.validate('ajv-registered-validation-schema-uid', 'body');</code></pre>
-        
-    
-</div>
-        
-    </div>
-    
-</div>
-
-        </dl>
-    
-
-    <!-- PRIVATE METHODS -->
-    
-
-    <!-- INHERITED METHODS -->
-    
-        <div class="page-header">
-            <h3>Inherited Methods</h3>
-        </div>
-
-        <dl>
-            
-
-<div class="doc-member panel panel-default">
     <div class="panel-heading" id="acceptedContentTypes">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>acceptedContentTypes</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>[String, ...]</code></span>
             </div>
             
@@ -2317,7 +1748,7 @@ route.validate('ajv-registered-validation-schema-uid', 'body');</code></pre>
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="acceptsContentType">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>acceptsContentType</strong><span class="signature">(type, <span class="optional">options</span>, <span class="optional">parser</span>)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
             </div>
             
@@ -2340,7 +1771,7 @@ route.validate('ajv-registered-validation-schema-uid', 'body');</code></pre>
         
 
 
-    <p>define which content-type headers the route supports</p>
+    <p>define which content-type headers the route supports.<br>this is also gonna register and manage a single validation middleware for <code>content-type</code> header internally</p>
 
         
 
@@ -2518,7 +1949,7 @@ route.validate('ajv-registered-validation-schema-uid', 'body');</code></pre>
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="addStep">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>addStep</strong><span class="signature">(<span class="optional">name</span>, fn)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
             </div>
             
@@ -2659,7 +2090,7 @@ route.validate('ajv-registered-validation-schema-uid', 'body');</code></pre>
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="buildResponse">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>buildResponse</strong><span class="signature">(cb)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="Response.html">Response</a></code></span>
             </div>
             
@@ -2791,7 +2222,7 @@ cause promise call chain interruption of current request and prioritized respons
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="catch">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>catch</strong><span class="signature">(<span class="optional">filter</span>, callback)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
             </div>
             
@@ -2952,7 +2383,7 @@ of the route middlwares</p>
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="getAllSteps">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>getAllSteps</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>[Object, ...]</code></span>
             </div>
             
@@ -3030,9 +2461,94 @@ of the route middlwares</p>
             
 
 <div class="doc-member panel panel-default">
+    <div class="panel-heading" id="getName">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>getName</strong><span class="signature">()</span><i class="return-type-icon"></i><span class="type-signature"><code>String</code></span>
+            </div>
+            
+                <div class="panel-attributes">
+                    <span class="abstract badge">abstract</span>
+                </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>returns route's name. If no name has been assigned,
+the name is dynamically created from route's url path</p>
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap">String</code>
+
+            
+
+            
+
+            
+        </span>
+    
+
+        
+
+        
+    </div>
+    
+</div>
+
+        
+            
+
+<div class="doc-member panel panel-default">
     <div class="panel-heading" id="main">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>main</strong><span class="signature">(fn)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
             </div>
             
@@ -3161,7 +2677,7 @@ route.step('main', () => {})</code></pre>
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="rejectsContentType">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>rejectsContentType</strong><span class="signature">(type)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
             </div>
             
@@ -3275,7 +2791,7 @@ Content types black listed by this method can be later white listed by the
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="respondsWith">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>respondsWith</strong><span class="signature">(descriptor)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
             </div>
             
@@ -3415,7 +2931,7 @@ route.main(function(req, res) {
 <div class="doc-member panel panel-default">
     <div class="panel-heading" id="step">
         <div class="row">
-            <div class="panel-title inherit  ">
+            <div class="panel-title   ">
                 <strong>step</strong><span class="signature">(<span class="optional">name</span>, fn)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
             </div>
             
@@ -3550,7 +3066,177 @@ route.main(function(req, res) {
     
 </div>
 
+        
+            
+
+<div class="doc-member panel panel-default">
+    <div class="panel-heading" id="validate">
+        <div class="row">
+            <div class="panel-title   ">
+                <strong>validate</strong><span class="signature">(valDef, dataProp)</span><i class="return-type-icon"></i><span class="type-signature"><code><a href="RouteInterface.html">RouteInterface</a></code></span>
+            </div>
+            
+        </div>
+        <div class="row sub-heading">
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+
+            
+                <div class="col-sm-4"></div>
+            
+        </div>
+    </div>
+    <div class="panel-body">
+        
+
+
+    <p>pushes specifically configured validation middleware to the route's call stack</p>
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+            <h5><b>Parameters</b>:</h5>
+            
+
+
+<ul class="params">
+    <li>
+        
+            <b>valDef</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">string</code> or <code class="text-nowrap">Object</code>
+</li>
+        
+
+        
+
+        
+            <li><p>string =&gt; registered validator's name. Object =&gt; schema definition</p></li>
+        
+
+        
+    </ul>
+</ul>
+
+<ul class="params">
+    <li>
+        
+            <b>dataProp</b>
+        
+
+        
+        
+        
+
+    </li>
+    <ul class="list-unstyled">
+        
+            <li>Type: <code class="text-nowrap">string</code>
+</li>
+        
+
+        
+
+        
+            <li><p>any of available properties of the <code>req</code> object - eg.: query|body|params|headers</p></li>
+        
+
+        
+    </ul>
+</ul>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+                <b>Returns</b>:
+            
+
+            
+
+
+        <span class="returns">
+            
+                <code class="text-nowrap"><a href="RouteInterface.html">RouteInterface</a></code>
+
+            
+
+            
+                <ul>
+<li>self</li>
+</ul>
+            
+
+            
+        </span>
+    
+
+        
+
+        
+            
+
+<div class="detail-content">
+    <h5><b>Example</b>:</h5>
+
+    
+
+        
+        <pre class="prettyprint"><code>route.validate({
+    properties: {
+        username: {type: 'string'}
+    }
+}, 'query');
+
+//or
+
+route.validate('ajv-registered-validation-schema-uid', 'body');</code></pre>
+        
+    
+</div>
+        
+    </div>
+    
+</div>
+
         </dl>
+    
+
+    <!-- PRIVATE METHODS -->
+    
+
+    <!-- INHERITED METHODS -->
     
 
     <!-- EVENTS -->
